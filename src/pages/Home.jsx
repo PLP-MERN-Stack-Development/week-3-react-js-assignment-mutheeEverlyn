@@ -98,23 +98,23 @@ const Home = () => {
   return (
     <div className="space-y-20">
       {/* Hero Section */}
-      <section className="text-center py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-3xl">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+      <section className="text-center py-12 sm:py-16 md:py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-3xl px-4 sm:px-6">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6">
           Welcome to TaskMaster
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto">
           Your ultimate task management solution for enhanced productivity and organization
         </p>
-        <div className="space-x-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:space-x-4">
           <Link
             to="/tasks"
-            className="btn btn-primary bg-white text-indigo-600 hover:bg-gray-100"
+            className="btn btn-primary bg-white text-indigo-600 hover:bg-gray-100 w-full sm:w-auto"
           >
             Get Started
           </Link>
           <Link
             to="/about"
-            className="btn btn-secondary bg-indigo-700 text-white hover:bg-indigo-800"
+            className="btn btn-secondary bg-indigo-700 text-white hover:bg-indigo-800 w-full sm:w-auto"
           >
             Learn More
           </Link>
@@ -122,7 +122,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6">
         <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
           <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">10K+</div>
           <div className="text-gray-600 dark:text-gray-400">Active Users</div>
@@ -142,9 +142,9 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section>
-        <h2 className="text-3xl font-bold text-center mb-12">Powerful Features</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <section className="px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Powerful Features</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -179,9 +179,9 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-gray-50 dark:bg-gray-900 py-20 rounded-3xl">
-        <h2 className="text-3xl font-bold text-center mb-12">What Our Users Say</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
+      <section className="bg-gray-50 dark:bg-gray-900 py-12 sm:py-16 md:py-20 rounded-3xl px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">What Our Users Say</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -205,23 +205,23 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="text-center py-20 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-3xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className="text-center py-12 sm:py-16 md:py-20 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-3xl px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
           Ready to Boost Your Productivity?
         </h2>
-        <p className="text-xl mb-8 max-w-2xl mx-auto">
+        <p className="text-lg sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto">
           Join thousands of professionals who trust TaskMaster for their daily task management needs
         </p>
-        <div className="space-x-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:space-x-4">
           <Link
             to="/tasks"
-            className="btn btn-primary bg-white text-indigo-600 hover:bg-gray-100"
+            className="btn btn-primary bg-white text-indigo-600 hover:bg-gray-100 w-full sm:w-auto"
           >
             Start Free Trial
           </Link>
           <Link
             to="/contact"
-            className="btn btn-secondary bg-indigo-700 text-white hover:bg-indigo-800"
+            className="btn btn-secondary bg-indigo-700 text-white hover:bg-indigo-800 w-full sm:w-auto"
           >
             Contact Sales
           </Link>
@@ -229,9 +229,9 @@ const Home = () => {
       </section>
 
       {/* FAQ Section */}
-      <section>
-        <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <section className="px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Frequently Asked Questions</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
           {faqs.map((faq, index) => (
             <div
               key={index}
